@@ -1,10 +1,25 @@
 # pbauto-nodejs-http
 node.js moldule to control coolux Pandoras Box
 
+## Versioning
+The version consists of a major, a minor and a revision field. (major.minor.revision)
+If the major version changes, then these changes are incompatible with prior versions. Changes to the minor version indicate backwards compatibility. The revision field is reserved for the Pandoras Box revision that is required to use all features. It might be possible to use the SDK with an older revision of Pandoras Box, but not all the commands will work.
+
+## Requirements
+* node.js
+* Pandora's Box Manager with web server enabled
+
+## Installation
+```
+npm install pbauto-nodejs-http
+```
+
 ## Usage
 Create a new PBAuto instance by passing in IP and Port of the Pandoras Box Web Server Service.
 
 ```javascript
+var PBAuto = require('pbauto-node');
+
 var connection = new PBAuto("2.0.0.1", 6214);
 ```
 
@@ -18,7 +33,7 @@ connection.getSelectedDeviceCount( function(response){
 	if(response.ok) // check if request was successful
 	{
 		// response values are automatically parsed and put on the response object
-		console.log(response.selectedDevicesCount);
+		console.log(response);
 	}
 });
 ```
