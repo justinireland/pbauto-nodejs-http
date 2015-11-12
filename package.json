@@ -1,6 +1,6 @@
 {
   "name": "pbauto-nodejs-http",
-  "version": "1.1.12086",
+  "version": "1.2.12086",
   "description": "nodejs module to control Coolux Pandoras Box",
   "main": "index.js",
   "scripts": {
