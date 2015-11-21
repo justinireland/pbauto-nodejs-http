@@ -14,7 +14,7 @@ npm install pbauto-nodejs-http
 Create a new PBAuto instance by passing in IP and Port of the Pandoras Box Web Server Service.
 
 ```javascript
-var PBAuto = require('pbauto-node');
+var PBAuto = require('pbauto-nodejs-http');
 
 var connection = new PBAuto("2.0.0.1", 6214);
 ```
